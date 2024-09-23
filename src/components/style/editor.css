@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    
+  }
+  
+  .containerLista {
+    width: 30%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto; /* Para que la lista de notas/tareas tenga scroll */
+    
+  }
+  /* Estilizando el scroll */
+.containerLista::-webkit-scrollbar {
+    width: 12px; /* Ancho del scroll */
+  }
+  
+  .containerLista::-webkit-scrollbar-track {
+    background: #e0e0e0; /* Color del fondo del track del scroll */
+    border-radius: 10px;
+  }
+  
+  .containerLista::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb (la parte que se arrastra) */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #e0e0e0; /* Espacio alrededor del thumb */
+  }
+  
+  .containerLista::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del thumb al hacer hover */
+  }
+  .containerList{
+    width: 100%;
+    
+  }
+  .notasEditor {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .ListTask{
+    color: black;
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column; /* Asegúrate de que los elementos se apilen verticalmente */
+    position: relative; /* Necesario para posicionar el botón absolutamente */
+  }
+  .listaPrincipal{
+    width: 350px;
+    max-height: 100px;  /* Limita la altura del contenedor UL */
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: gray;
+    padding: 10px;
+    overflow: hidden;  /* Oculta cualquier contenido que sobrepase la altura */
+    margin-bottom: 10px;
+  }
+  .listaPrincipal h4{
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .listyle{
+    list-style: none;
+  }
+  .ListNotes {
+    color: black;
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column; /* Asegúrate de que los elementos se apilen verticalmente */
+    position: relative; /* Necesario para posicionar el botón absolutamente */
+  }
+  .ListNotes li{
+    width: 350px;
+    height: 100px;
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: gray;
+    margin-bottom: 12px;
+  }
+
+  
+  .createNote {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-image: url('/src/assets/add.png');
+    background-size: contain; /* Ajustar la imagen dentro del botón */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    width: 22px; /* Tamaño del botón */
+    height: 22px; /* Tamaño del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margin */
+    background-color: white;
+}
+
+.createTaskbtn{  position: absolute;
+    top: 20px;
+    right: 10px;
+    background-image: url('/src/assets/to-do-list.png');
+    background-size: contain; /* Ajustar la imagen dentro del botón */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    width: 25px; /* Tamaño del botón */
+    height: 25px; /* Tamaño del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margin */
+    background-color: white;
+}
