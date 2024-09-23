@@ -121,6 +121,7 @@ const NotesApp = () => {
 
         <div>
           <h2>Proyectos Guardados</h2>
+          <h2></h2>
           <ul>
             {projects.map((project, index) => (
               <li key={index}>
